@@ -30,8 +30,6 @@ The project directory is organized as follows:
 - `/tst`
   - `/ssl`: Test Bench (Application Layer)
 
-All makefiles are provided.
-
 ## Functions
 
 Applications communicate using the following SSL functions:
