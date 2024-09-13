@@ -18,3 +18,23 @@ An encrypted connection is established, accessible only to authorized parties.
 - **Confidentiality:** Encrypting data secures it from eavesdroppers.
 - **Integrity:** MACs ensure data remains unaltered.
 - **Authentication (Optional):** Digital certificates prevent impersonation.
+
+## Project Structure
+
+The project directory is organized as follows:
+
+- `/src`
+  - `/tcp`: TCP implementation
+  - `/ssl`: SSL implementation
+  - `/cryptopp`: Crypto primitives
+- `/tst`
+  - `/ssl`: Test Bench (Application Layer)
+
+All makefiles are provided.
+
+## Functions
+
+Applications communicate using the following SSL functions:
+
+- **`SSL::send(string)`**: Encrypts the string and sends it.
+- **`SSL::recv(string&)`**: Receives an encrypted string and then decrypts it.
